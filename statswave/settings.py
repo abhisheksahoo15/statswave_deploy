@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-_4&h57g0&k^0oq4&(j39xr2)dj%^cgk=vxrz7bw8(g=u=+&as^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS =  ['statswave.azurewebsites.net', 'localhost', '127.0.0.1']
 
 
 
