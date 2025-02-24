@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-mp$r237pszqnw*a0mb7q%vq=d=rjqe1zu!2b-7hey_pta-h390
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['statswave.azurewebsites.net', 'localhost', '127.0.0.1']
+
 
 
 # Application definition
