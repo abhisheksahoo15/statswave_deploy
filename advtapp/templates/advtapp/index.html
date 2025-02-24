@@ -1,0 +1,94 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnalyticsPro</title>
+  <link rel="stylesheet" href="{% static 'css/index.css' %}">
+  <script src="{% static 'js/script.js' %}" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">AnalyticsPro</div>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="dashboard">dashboard</a></li>
+      </ul>
+      <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero fade-in">
+    <div class="hero-content">
+      <h1>Data Analytics Made Simple</h1>
+      <p>Unlock powerful insights with stunning visualizations and AI-driven solutions.<br>
+      Be a part of ANALYTICAL ERA <br>
+    <strong>~ Abhishek Sahoo</strong></p>
+      <a href="#services"><button>Get Started</button></a>
+    </div>
+  </section>
+
+  <section id="services" class="services fade-in">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <div class="card">
+        <h3>Data Mining</h3>
+        <p>Extract meaningful patterns and insights from complex datasets.</p>
+      </div>
+      <div class="card">
+        <h3>Business Intelligence</h3>
+        <p>Make smarter decisions with cutting-edge BI solutions.</p>
+      </div>
+      <div class="card">
+        <h3>Custom Analytics</h3>
+        <p>Tailored analytics solutions to meet your business needs.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about fade-in">
+    <h2>About Us</h2>
+    <p>We are a team of passionate data scientists and engineers dedicated to providing top-notch analytics solutions. From data visualization to machine learning, we empower businesses to thrive in the digital age.</p>
+  </section>
+
+  <section id="contact" class="contact fade-in">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 AnalyticsPro. All rights reserved.</p>
+  </footer>
+
+  <!-- Floating Chatbot -->
+  <div id="chatbot" class="chatbot-container">
+    <div class="chatbot-header">
+      <span>Chat with us</span>
+      <button id="close-chat">X</button>
+    </div>
+    <div id="chat-content" class="chat-content">
+      <div class="chatbot-message bot">Hello! How can I assist you today?</div>
+    </div>
+    <input type="text" id="user-input" placeholder="Type a message..." />
+    <button id="send-message">Send</button>
+  </div>
+
+  <!-- Floating Chat Icon -->
+  <div id="chatbot-icon" class="chat-icon">
+    <span>💬</span>
+  </div>
+
+</body>
+</html>
