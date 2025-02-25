@@ -104,3 +104,5 @@ CSRF_COOKIE_SECURE = True  # Secure CSRF cookies
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
