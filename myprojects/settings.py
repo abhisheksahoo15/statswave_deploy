@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure--oga#^ma#nb%q!!jym)4keyk$0k&0#wvkqgy+=#!+9fl4_$in_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False  # Set to False for production
+DEBUG = True  # Set to False for production
 
 ALLOWED_HOSTS = ['statswave.azurewebsites.net', '127.0.0.1', 'localhost']
 
