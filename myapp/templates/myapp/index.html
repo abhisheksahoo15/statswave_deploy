@@ -1,64 +1,94 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>StatsWave | Empowering Insights</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>AnalyticsPro</title>
+  <link rel="stylesheet" href="{% static 'css/index.css' %}">
+  <script src="{% static 'js/script.js' %}" defer></script>
 </head>
-<body class="bg-gray-50 text-gray-800">
-  <!-- Hero Section -->
-  <section class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
-    <div class="text-center">
-      <h1 class="text-5xl font-bold mb-4">Welcome to StatsWave</h1>
-      <p class="text-xl mb-6">Empowering businesses with data-driven insights</p>
-      <a href="#features" class="px-6 py-3 bg-white text-blue-600 rounded-full font-semibold shadow-lg hover:bg-gray-200 transition">Explore Features</a>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section class="py-16 px-8">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-4">Why Choose StatsWave?</h2>
-      <p class="text-lg">We help businesses unlock the full potential of their data through innovative analytics, powerful dashboards, and actionable insights.</p>
-    </div>
-  </section>
-
-  <!-- Features Section -->
-  <section id="features" class="py-16 bg-gray-100 px-8">
-    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="p-6 bg-white rounded-lg shadow-xl">
-        <h3 class="text-xl font-semibold mb-2">Real-Time Analytics</h3>
-        <p>Stay ahead with live data tracking and instant reporting.</p>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">AnalyticsPro</div>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="dashboard">dashboard</a></li>
+      </ul>
+      <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-      <div class="p-6 bg-white rounded-lg shadow-xl">
-        <h3 class="text-xl font-semibold mb-2">Custom Dashboards</h3>
-        <p>Visualize your data with personalized, interactive dashboards.</p>
+    </nav>
+  </header>
+
+  <section class="hero fade-in">
+    <div class="hero-content">
+      <h1>Data Analytics Made Simple</h1>
+      <p>Unlock powerful insights with stunning visualizations and AI-driven solutions.<br>
+      Be a part of ANALYTICAL ERA <br>
+    <strong>~ Abhishek Sahoo</strong></p>
+      <a href="#services"><button>Get Started</button></a>
+    </div>
+  </section>
+
+  <section id="services" class="services fade-in">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <div class="card">
+        <h3>Data Mining</h3>
+        <p>Extract meaningful patterns and insights from complex datasets.</p>
       </div>
-      <div class="p-6 bg-white rounded-lg shadow-xl">
-        <h3 class="text-xl font-semibold mb-2">Predictive Insights</h3>
-        <p>Make informed decisions using AI-driven forecasting models.</p>
+      <div class="card">
+        <h3>Business Intelligence</h3>
+        <p>Make smarter decisions with cutting-edge BI solutions.</p>
+      </div>
+      <div class="card">
+        <h3>Custom Analytics</h3>
+        <p>Tailored analytics solutions to meet your business needs.</p>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section class="py-16 px-8 bg-gradient-to-r from-indigo-600 to-purple-500 text-white">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-4">Get in Touch</h2>
-      <p class="mb-8">Have questions? Reach out to us for more information.</p>
-      <form class="grid grid-cols-1 gap-4 max-w-md mx-auto">
-        <input type="text" placeholder="Your Name" class="px-4 py-2 rounded-lg text-gray-800">
-        <input type="email" placeholder="Your Email" class="px-4 py-2 rounded-lg text-gray-800">
-        <textarea placeholder="Your Message" class="px-4 py-2 rounded-lg text-gray-800"></textarea>
-        <button type="submit" class="px-6 py-3 bg-white text-indigo-600 rounded-full font-semibold shadow-lg hover:bg-gray-200 transition">Send Message</button>
-      </form>
-    </div>
+  <section id="about" class="about fade-in">
+    <h2>About Us</h2>
+    <p>We are a team of passionate data scientists and engineers dedicated to providing top-notch analytics solutions. From data visualization to machine learning, we empower businesses to thrive in the digital age.</p>
   </section>
 
-  <!-- Footer -->
-  <footer class="py-6 text-center bg-gray-800 text-white">
-    <p>&copy; 2025 StatsWave. All rights reserved.</p>
+  <section id="contact" class="contact fade-in">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 AnalyticsPro. All rights reserved.</p>
   </footer>
+
+  <!-- Floating Chatbot -->
+  <div id="chatbot" class="chatbot-container">
+    <div class="chatbot-header">
+      <span>Chat with us</span>
+      <button id="close-chat">X</button>
+    </div>
+    <div id="chat-content" class="chat-content">
+      <div class="chatbot-message bot">Hello! How can I assist you today?</div>
+    </div>
+    <input type="text" id="user-input" placeholder="Type a message..." />
+    <button id="send-message">Send</button>
+  </div>
+
+  <!-- Floating Chat Icon -->
+  <div id="chatbot-icon" class="chat-icon">
+    <span>💬</span>
+  </div>
+
 </body>
 </html>
