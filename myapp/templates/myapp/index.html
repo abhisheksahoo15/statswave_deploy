@@ -1,20 +1,22 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AnalyticsPro</title>
-    <link rel="stylesheet" href="{% static 'myapp/css/index.css' %}">
-    <script src="{% static 'myapp/js/script.js' %}" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    
 </head>
  
 </head>
 <body>
   <header>
     <nav class="navbar">
-      <div class="logo">AnalyticsPro version 1</div>
+      <div class="logo">StatsWave Analytics</div>
       <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="dashboard">dashboard</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#about">About Us</a></li>
         <li><a href="dashboard">dashboard</a></li>
@@ -36,14 +38,7 @@
       <a href="#services"><button>Get Started</button></a>
     </div>
   </section>
-  <div style="display: flex; flex-direction: column; gap: 10px; padding: 20px; max-width: 300px; margin: auto;">
-    <button onclick="window.location.href='/'" style="padding: 10px; background-color: #007bff; color: white; border: none; border-radius: 5px;">Home</button>
-    <button onclick="window.location.href='/career/'" style="padding: 10px; background-color: #28a745; color: white; border: none; border-radius: 5px;">Career</button>
-    <button onclick="window.location.href='/case-studies/'" style="padding: 10px; background-color: #17a2b8; color: white; border: none; border-radius: 5px;">Case Studies</button>
-    <button onclick="window.location.href='/certificate/'" style="padding: 10px; background-color: #ffc107; color: white; border: none; border-radius: 5px;">Certificate</button>
-    <button onclick="window.location.href='/dashboard/'" style="padding: 10px; background-color: #6f42c1; color: white; border: none; border-radius: 5px;">Dashboard</button>
-    <button onclick="window.location.href='/pricing/'" style="padding: 10px; background-color: #dc3545; color: white; border: none; border-radius: 5px;">Pricing</button>
-  </div>
+
   
   <section id="services" class="services fade-in">
     <h2>Our Services</h2>
@@ -63,25 +58,9 @@
     </div>
   </section>
 
-  <section id="about" class="about fade-in">
-    <h2>About Us</h2>
-    <p>We are a team of passionate data scientists and engineers dedicated to providing top-notch analytics solutions. From data visualization to machine learning, we empower businesses to thrive in the digital age.</p>
-  </section>
 
-  <section id="contact" class="contact fade-in">
-    <h2>Contact Us</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
 
-  <footer>
-    <p>&copy; 2025 AnalyticsPro. All rights reserved.</p>
-  </footer>
-
+ 
   <!-- Floating Chatbot -->
   <div id="chatbot" class="chatbot-container">
     <div class="chatbot-header">
@@ -100,5 +79,94 @@
     <span>💬</span>
   </div>
 
+
+<!-- Full-Width Showcase Section -->
+<section class="showcase">
+    <h2>Our Work</h2>
+    <div class="showcase-content">
+      <div class="showcase-card">
+        <h3>AI-Driven Insights</h3>
+        <p>We provide AI-powered data analytics to help businesses make smart decisions.</p>
+      </div>
+      <div class="showcase-card">
+        <h3>Predictive Analytics</h3>
+        <p>Our models forecast trends to keep you ahead in your industry.</p>
+      </div>
+      <div class="showcase-card">
+        <h3>Data Visualization</h3>
+        <p>Transform complex data into easy-to-understand visual reports.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Mission Section with Core Team Cards -->
+  <section class="mission">
+    <div class="mission-content">
+      <h2>Our Mission</h2>
+      <p>We aim to revolutionize data science by delivering cutting-edge analytics solutions.</p>
+    </div>
+    <div class="team-cards">
+      <div class="team-card">
+        <h3>Abhishek Sahoo</h3>
+        <p>Founder & Data Scientist</p>
+      </div>
+      <div class="team-card">
+        <h3>John Doe</h3>
+        <p>ML Engineer</p>
+      </div>
+      <div class="team-card">
+        <h3>Jane Smith</h3>
+        <p>Business Analyst</p>
+      </div>
+    </div>
+  </section>
+  
+  <section id="about" class="about fade-in">
+    <h2>About Us</h2>
+    <p>We are a team of passionate data scientists and engineers dedicated to providing top-notch analytics solutions. From data visualization to machine learning, we empower businesses to thrive in the digital age.</p>
+  </section>
+
+  <section id="contact" class="contact fade-in">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+
+  <!-- Extended Footer -->
+  <footer class="footer">
+    <div class="footer-columns">
+      <div class="footer-column">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Case Studies</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Webinars</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="#">Email Us</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; 2025 StatsWave Analytics. All rights reserved.</p>
+  </footer>
+  
 </body>
 </html>
